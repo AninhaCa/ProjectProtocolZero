@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		15A60BD3660A47C4EE664938 /* Pods_ProjectProtocolZero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36184A0433368E1043AD5087 /* Pods_ProjectProtocolZero.framework */; };
+		77B03A9429D3B55700AD7BAC /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B03A9329D3B55600AD7BAC /* Pizza.swift */; };
 		77C8E51829D3B3BE00AE36B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C8E51729D3B3BE00AE36B5 /* AppDelegate.swift */; };
 		77C8E51A29D3B3BE00AE36B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C8E51929D3B3BE00AE36B5 /* SceneDelegate.swift */; };
 		77C8E51C29D3B3BE00AE36B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C8E51B29D3B3BE00AE36B5 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		36184A0433368E1043AD5087 /* Pods_ProjectProtocolZero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectProtocolZero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77B03A9329D3B55600AD7BAC /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
 		77C8E51429D3B3BE00AE36B5 /* ProjectProtocolZero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectProtocolZero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C8E51729D3B3BE00AE36B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77C8E51929D3B3BE00AE36B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				77C8E51729D3B3BE00AE36B5 /* AppDelegate.swift */,
 				77C8E51929D3B3BE00AE36B5 /* SceneDelegate.swift */,
+				77B03A9329D3B55600AD7BAC /* Pizza.swift */,
 				77C8E51B29D3B3BE00AE36B5 /* ViewController.swift */,
 				77C8E51D29D3B3BE00AE36B5 /* Main.storyboard */,
 				77C8E52029D3B3C100AE36B5 /* Assets.xcassets */,
@@ -88,7 +91,6 @@
 				856CAB9731CBFE9A60A27A1D /* Pods-ProjectProtocolZero.debug.xcconfig */,
 				B5A2C08E9CC9BC4B05FB1BCF /* Pods-ProjectProtocolZero.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77B03A9429D3B55700AD7BAC /* Pizza.swift in Sources */,
 				77C8E51C29D3B3BE00AE36B5 /* ViewController.swift in Sources */,
 				77C8E51829D3B3BE00AE36B5 /* AppDelegate.swift in Sources */,
 				77C8E51A29D3B3BE00AE36B5 /* SceneDelegate.swift in Sources */,
