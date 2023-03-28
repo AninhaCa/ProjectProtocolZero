@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15A60BD3660A47C4EE664938 /* Pods_ProjectProtocolZero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36184A0433368E1043AD5087 /* Pods_ProjectProtocolZero.framework */; };
 		77C8E51829D3B3BE00AE36B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C8E51729D3B3BE00AE36B5 /* AppDelegate.swift */; };
 		77C8E51A29D3B3BE00AE36B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C8E51929D3B3BE00AE36B5 /* SceneDelegate.swift */; };
 		77C8E51C29D3B3BE00AE36B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C8E51B29D3B3BE00AE36B5 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36184A0433368E1043AD5087 /* Pods_ProjectProtocolZero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectProtocolZero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C8E51429D3B3BE00AE36B5 /* ProjectProtocolZero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectProtocolZero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C8E51729D3B3BE00AE36B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77C8E51929D3B3BE00AE36B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		77C8E52029D3B3C100AE36B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77C8E52329D3B3C100AE36B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77C8E52529D3B3C100AE36B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		856CAB9731CBFE9A60A27A1D /* Pods-ProjectProtocolZero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectProtocolZero.debug.xcconfig"; path = "Target Support Files/Pods-ProjectProtocolZero/Pods-ProjectProtocolZero.debug.xcconfig"; sourceTree = "<group>"; };
+		B5A2C08E9CC9BC4B05FB1BCF /* Pods-ProjectProtocolZero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectProtocolZero.release.xcconfig"; path = "Target Support Files/Pods-ProjectProtocolZero/Pods-ProjectProtocolZero.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15A60BD3660A47C4EE664938 /* Pods_ProjectProtocolZero.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08873B8DB281967D74AEB17D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36184A0433368E1043AD5087 /* Pods_ProjectProtocolZero.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		77C8E50B29D3B3BE00AE36B5 = {
 			isa = PBXGroup;
 			children = (
 				77C8E51629D3B3BE00AE36B5 /* ProjectProtocolZero */,
 				77C8E51529D3B3BE00AE36B5 /* Products */,
+				F83C1FBC171D95CE30533A43 /* Pods */,
+				08873B8DB281967D74AEB17D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = ProjectProtocolZero;
 			sourceTree = "<group>";
 		};
+		F83C1FBC171D95CE30533A43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				856CAB9731CBFE9A60A27A1D /* Pods-ProjectProtocolZero.debug.xcconfig */,
+				B5A2C08E9CC9BC4B05FB1BCF /* Pods-ProjectProtocolZero.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77C8E52829D3B3C100AE36B5 /* Build configuration list for PBXNativeTarget "ProjectProtocolZero" */;
 			buildPhases = (
+				1898A601205884F39008AC9A /* [CP] Check Pods Manifest.lock */,
 				77C8E51029D3B3BE00AE36B5 /* Sources */,
 				77C8E51129D3B3BE00AE36B5 /* Frameworks */,
 				77C8E51229D3B3BE00AE36B5 /* Resources */,
+				C7AE71003A9BFEAB700ABFF3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1898A601205884F39008AC9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProjectProtocolZero-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7AE71003A9BFEAB700ABFF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProjectProtocolZero/Pods-ProjectProtocolZero-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProjectProtocolZero/Pods-ProjectProtocolZero-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProjectProtocolZero/Pods-ProjectProtocolZero-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		77C8E51029D3B3BE00AE36B5 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		77C8E52929D3B3C100AE36B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 856CAB9731CBFE9A60A27A1D /* Pods-ProjectProtocolZero.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		77C8E52A29D3B3C100AE36B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5A2C08E9CC9BC4B05FB1BCF /* Pods-ProjectProtocolZero.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
