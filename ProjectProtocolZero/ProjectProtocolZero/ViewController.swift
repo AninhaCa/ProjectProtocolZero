@@ -9,11 +9,32 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var tableView: UITableView!
+    
+    var arrayPizza: Pizza?
+    
+    let request = RequestPizza()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupTableView()
+        myRequest()
     }
 
-
+    func setupTableView() {
+        
+    }
+    
+    func myRequest() {
+        request.delegate = self
+        request.requestPizza { pizza in
+        }
+    }
 }
 
+extension ViewController: RequestDelegate {
+    func finishRequest(arrayPizza: Pizza?) {
+        self.arrayPizza = arrayPizza
+        self.tableView.reloadData()
+    }
+}

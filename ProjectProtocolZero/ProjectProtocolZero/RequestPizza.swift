@@ -7,6 +7,7 @@
 
 import UIKit
 import Alamofire
+
 protocol RequestDelegate: NSObject {
     func finishRequest(arrayPizza: Pizza?)
 }
