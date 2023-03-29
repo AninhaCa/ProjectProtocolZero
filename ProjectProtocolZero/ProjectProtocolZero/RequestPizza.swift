@@ -7,8 +7,13 @@
 
 import UIKit
 import Alamofire
+protocol RequestDelegate: NSObject {
+    func finishRequest(arrayPizza: Pizza?)
+}
 
 class RequestPizza: NSObject {
+    
+    weak var delegate: RequestDelegate?
     
     func requestPizza(completion: @escaping (Pizza?) -> Void) {
         AF.request("https://p3teufi0k9.execute-api.us-east-1.amazonaws.com/v1/pizza", method: .get).response { response in
@@ -16,6 +21,8 @@ class RequestPizza: NSObject {
             let pizza = try? JSONDecoder().decode(Pizza.self, from: response.data ?? Data())
             
             completion(pizza)
+            
+            self.delegate?.finishRequest(arrayPizza: pizza)
         }
     }
 }
