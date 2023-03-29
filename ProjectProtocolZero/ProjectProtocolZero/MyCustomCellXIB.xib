@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -12,29 +13,50 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MyCustomCellXIB" customModule="ProjectProtocolZero" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k20-Kt-khZ">
-                        <rect key="frame" x="139" y="12" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J4I-Ms-R8B">
+                        <rect key="frame" x="52" y="64" width="216" height="134"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="216" id="6rc-Lc-UlS"/>
+                            <constraint firstAttribute="height" constant="134" id="Syb-IF-Fic"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k20-Kt-khZ">
+                        <rect key="frame" x="28" y="10" width="264" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="BqD-9U-car"/>
+                            <constraint firstAttribute="width" constant="264" id="F41-bP-8Q3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J4I-Ms-R8B">
-                        <rect key="frame" x="40" y="72" width="240" height="128"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
                 </subviews>
+                <color key="backgroundColor" systemColor="systemTealColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="J4I-Ms-R8B" secondAttribute="trailing" constant="36" id="BRK-OI-VUU"/>
+                    <constraint firstAttribute="trailing" secondItem="k20-Kt-khZ" secondAttribute="trailing" constant="28" id="HAR-T5-aqj"/>
+                    <constraint firstItem="J4I-Ms-R8B" firstAttribute="top" secondItem="k20-Kt-khZ" secondAttribute="bottom" constant="24" id="Jsb-TR-scu"/>
+                    <constraint firstItem="k20-Kt-khZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ikw-dg-Tvf"/>
+                    <constraint firstItem="J4I-Ms-R8B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="36" id="ncK-eX-lMy"/>
+                    <constraint firstItem="k20-Kt-khZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="ssT-q7-JLZ"/>
+                    <constraint firstItem="J4I-Ms-R8B" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="xvh-u5-sgz"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="imagePizza" destination="J4I-Ms-R8B" id="ujN-XU-7ka"/>
                 <outlet property="labelPizza" destination="k20-Kt-khZ" id="Lnp-Gk-S6R"/>
             </connections>
-            <point key="canvasLocation" x="132" y="-15"/>
+            <point key="canvasLocation" x="131.8840579710145" y="-15.401785714285714"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
